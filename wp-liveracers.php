@@ -1,7 +1,7 @@
 <?php
 /*
 Plugin Name: WordPress/LiveRacers
-Plugin URI:
+Plugin URI: https://github.com/pglewis/wp-liveracers
 Description: Support for the LiveRacers "Live Widget" in WordPress
 Version: 1.0
 Author: Phil Lewis
