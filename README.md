@@ -5,7 +5,8 @@ WordPress plugin to insert the LiveRacers Live Widget on your site via a WordPre
 
 Widget
 ======
-The WordPress widget allows you to insert the LiveRacers Live Widget into any widgetized area in your site's theme.  All the settings are available directly in the widget UI.  
+The WordPress widget allows you to insert the LiveRacers Live Widget into any widgetized area in your site's theme.  All the settings are available directly in the widget UI. 
+
 ![alt tag](https://raw.githubusercontent.com/pglewis/wp-liveracers/master/wp-liveracers-widget.png)
 
 Shortcode
@@ -19,5 +20,5 @@ Supported attributes:
 * `url`: Required, the full URL to your LiveRacers domain
 * `theme`: String, `light` (default) and `dark`
 * `orientation`: String, `vertical` (default) and `horizontal`
-* `width`: Numeric, width of the widget in pixels
+* `width`: Numeric, width of the widget in pixels (default = 200)
 * `canjoin`: String, `true` (default) or `false`; whether or not to show the "Join" link
