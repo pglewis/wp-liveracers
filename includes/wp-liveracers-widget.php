@@ -110,7 +110,7 @@ class WP_LiveRacers_Widget extends WP_Widget {
 		</p>
 		<p>
 			<input type="checkbox" id="<?= $this->get_field_id( 'canjoin' ); ?>" name="<?= $this->get_field_name( 'canjoin' ); ?>" value="canjoin" <?= ( 'true' == $canjoin ) ? 'checked="checked"' : ''; ?>>
-			<label for="<?= $this->get_field_id( 'canjoin' ); ?>"><?php _e( 'Can join server?', 'wp-liveracers' ); ?></label>
+			<label for="<?= $this->get_field_id( 'canjoin' ); ?>"><?php _e( 'Show join link?', 'wp-liveracers' ); ?></label>
 		</p>
 		<?php
 	}
