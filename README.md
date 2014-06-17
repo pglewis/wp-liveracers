@@ -1,20 +1,20 @@
 wp-liveracers
 =============
 
-WordPress plugin to insert the LiveRacers Live Widget on your site via a WordPress widget or shortcode
+Support for the LiveRacers "Live Widget" as a WordPress plugin.  Insert the LiveRacers Live Widget on your site via a WordPress widget or shortcode
 
 Installing
 ==========
 
 1. Download the .zip file from the repository
-2. Put the contents of the .zip file into your wp-content/plugins folder
-3. Enable the plugin 
+1. Put the contents of the .zip file into your wp-content/plugins folder
+1. Enable the plugin
 
 Widget
 ======
 The WordPress widget allows you to insert the LiveRacers Live Widget into any widgetized area in your site's theme.  All the settings are available directly in the widget UI. 
 
-![alt tag](https://raw.githubusercontent.com/pglewis/wp-liveracers/master/wp-liveracers-widget.png)
+![alt tag](https://raw.githubusercontent.com/pglewis/wp-liveracers/master/assets/screenshot-1.png)
 
 Shortcode
 =========
