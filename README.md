@@ -1,5 +1,5 @@
-wp-liveracers
-=============
+WordPress LiveRacers
+====================
 
 Support for the LiveRacers "Live Widget" as a WordPress plugin.  Insert the LiveRacers Live Widget on your site via a WordPress widget or shortcode
 

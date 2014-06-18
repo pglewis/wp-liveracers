@@ -2,9 +2,9 @@
 /*
 Copyright 2014 Phil Lewis
 
-This file is part of wp-liveracers
+This file is part of WordPress LiveRacers
 
-wp-liveracers is free software: you can redistribute it and/or modify
+WordPress LiveRacers is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
 the Free Software Foundation, either version 3 of the License, or
 (at your option) any later version.
@@ -75,7 +75,7 @@ class WP_LiveRacers_Widget extends WP_Widget {
 	 */
 	function form ( $instance ) {
 
-		$title = ( isset( $instance[ 'title' ] ) ) ? $instance[ 'title' ] : __( 'LiveRacers Servers', 'wp-liveracers' );
+		$title = ( isset( $instance[ 'title' ] ) ) ? $instance[ 'title' ] : _x( 'LiveRacers Servers', 'default widget title', 'wp-liveracers' );
 		$url = ( isset( $instance[ 'url' ] ) ) ? $instance[ 'url' ] : 'http://YOURDOMAIN.liveracers.com';
 		$theme = ( isset( $instance[ 'theme' ] ) ) ? $instance[ 'theme' ] : 'light';
 		$orientation = ( isset( $instance[ 'orientation' ] ) ) ? $instance[ 'orientation' ] : 'vertical';
@@ -83,34 +83,34 @@ class WP_LiveRacers_Widget extends WP_Widget {
 		$canjoin = ( isset( $instance[ 'canjoin' ] ) ) ? $instance[ 'canjoin' ] : 'true';
 		?>
 		<p>
-			<label for="<?= $this->get_field_id( 'title' ); ?>"><?php _e( 'Title:', 'wp-liveracers' ); ?></label>
+			<label for="<?= $this->get_field_id( 'title' ); ?>"><?php esc_html_e( 'Title', 'wp-liveracers' ); ?></label>
 			<input class="widefat" id="<?= $this->get_field_id( 'title' ); ?>" name="<?= $this->get_field_name( 'title' ); ?>" type="text" value="<?= esc_attr( $title ); ?>">
 		</p>
 		<p>
-			<label for="<?= $this->get_field_id( 'url' ); ?>"><?php _e( 'LiveRacers URL:', 'wp-liveracers' ); ?></label>
+			<label for="<?= $this->get_field_id( 'url' ); ?>"><?php esc_html_e( 'LiveRacers URL', 'wp-liveracers' ); ?></label>
 			<input class="widefat" id="<?= $this->get_field_id( 'url' ); ?>" name="<?= $this->get_field_name( 'url' ); ?>" type="text" value="<?= esc_url( $url ); ?>">
 		</p>
 		<p>
-			<label for="<?= $this->get_field_id( 'theme' ); ?>"><?php _e( 'Theme:', 'wp-liveracers' ); ?></label>
+			<label for="<?= $this->get_field_id( 'theme' ); ?>"><?php esc_html_e( 'Theme', 'wp-liveracers' ); ?></label>
 			<select class="widefat" id="<?= $this->get_field_id( 'theme' ); ?>" name="<?= $this->get_field_name( 'theme' ); ?>">
-				<option value="light" <?= ( $theme == 'light' ) ? 'selected="selected"' : ''; ?>>Light</option>
-				<option value="dark" <?= ( $theme == 'dark' ) ? 'selected="selected"' : ''; ?>>Dark</option>
+				<option value="light" <?= ( $theme == 'light' ) ? 'selected="selected"' : ''; ?>><?php esc_html_x( 'Light', 'theme name', 'wp-liveracers' ); ?></option>
+				<option value="dark" <?= ( $theme == 'dark' ) ? 'selected="selected"' : ''; ?>><?php esc_html_x( 'Dark', 'theme name', 'wp-liveracers' ); ?></option>
 			</select>
 		</p>
 		<p>
-			<label for="<?= $this->get_field_id( 'orientation' ); ?>"><?php _e( 'Orientation:', 'wp-liveracers' ); ?></label>
+			<label for="<?= $this->get_field_id( 'orientation' ); ?>"><?php esc_html_e( 'Orientation', 'wp-liveracers' ); ?></label>
 			<select class="widefat" id="<?= $this->get_field_id( 'orientation' ); ?>" name="<?= $this->get_field_name( 'orientation' ); ?>">
-				<option value="vertical" <?= ( $orientation == 'vertical' ) ? 'selected="selected"' : ''; ?>>Vertical</option>
-				<option value="horizontal" <?= ( $orientation == 'horizontal' ) ? 'selected="selected"' : ''; ?>>Horizontal</option>
+				<option value="vertical" <?= ( $orientation == 'vertical' ) ? 'selected="selected"' : ''; ?>><?php esc_html_x( 'Vertical', 'orientation', 'wp-liveracers' ); ?></option>
+				<option value="horizontal" <?= ( $orientation == 'horizontal' ) ? 'selected="selected"' : ''; ?>><?php esc_html_x( 'Horizontal', 'orientation', 'wp-liveracers' ); ?></option>
 			</select>
 		</p>
 		<p>
-			<label for="<?= $this->get_field_id( 'width' ); ?>"><?php _e( 'Width (pixels)', 'wp-liveracers' ); ?></label>
+			<label for="<?= $this->get_field_id( 'width' ); ?>"><?php esc_html_e( 'Width (pixels)', 'wp-liveracers' ); ?></label>
 			<input class="widefat" id="<?= $this->get_field_id( 'width' ); ?>" name="<?= $this->get_field_name( 'width' ); ?>" type="text" value="<?= esc_attr( $width ); ?>">
 		</p>
 		<p>
 			<input type="checkbox" id="<?= $this->get_field_id( 'canjoin' ); ?>" name="<?= $this->get_field_name( 'canjoin' ); ?>" value="canjoin" <?= ( 'true' == $canjoin ) ? 'checked="checked"' : ''; ?>>
-			<label for="<?= $this->get_field_id( 'canjoin' ); ?>"><?php _e( 'Show join link?', 'wp-liveracers' ); ?></label>
+			<label for="<?= $this->get_field_id( 'canjoin' ); ?>"><?php esc_html_e( 'Show join link?', 'wp-liveracers' ); ?></label>
 		</p>
 		<?php
 	}

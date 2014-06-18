@@ -1,17 +1,19 @@
 <?php
 /*
-Plugin Name: WordPress/LiveRacers
+Plugin Name: WordPress LiveRacers
 Plugin URI: https://github.com/pglewis/wp-liveracers
 Description: Support for the LiveRacers "Live Widget" in WordPress
 Version: 1.0
 Author: Phil Lewis
+License: GPLv2 or later
 Text Domain: wp-liveracers
+Domain Path: /languages/
 
 Copyright 2014 Phil Lewis
 
-This file is part of wp-liveracers
+This file is part of WordPress LiveRacers
 
-wp-liveracers is free software: you can redistribute it and/or modify
+WordPress LiveRacers is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
 the Free Software Foundation, either version 3 of the License, or
 (at your option) any later version.
@@ -41,6 +43,8 @@ class WP_LiveRacers {
 
 		self::$plugin_url = trailingslashit( plugin_dir_url( __FILE__ ) );
 		self::$plugin_dir = trailingslashit( plugin_dir_path( __FILE__ ) );
+
+		load_plugin_textdomain( 'wp-liveracers', false, dirname( plugin_basename( __FILE__ ) ) . '/languages/' );
 
 		// Scripts
 		add_action( 'wp_enqueue_scripts', array( 'WP_LiveRacers', 'enqueue_scripts' ) );
