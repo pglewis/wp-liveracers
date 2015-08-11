@@ -93,15 +93,15 @@ class WP_LiveRacers_Widget extends WP_Widget {
 		<p>
 			<label for="<?= $this->get_field_id( 'theme' ); ?>"><?php esc_html_e( 'Theme', 'wp-liveracers' ); ?></label>
 			<select class="widefat" id="<?= $this->get_field_id( 'theme' ); ?>" name="<?= $this->get_field_name( 'theme' ); ?>">
-				<option value="light" <?= ( $theme == 'light' ) ? 'selected="selected"' : ''; ?>><?php esc_html_x( 'Light', 'theme name', 'wp-liveracers' ); ?></option>
-				<option value="dark" <?= ( $theme == 'dark' ) ? 'selected="selected"' : ''; ?>><?php esc_html_x( 'Dark', 'theme name', 'wp-liveracers' ); ?></option>
+				<option value="light" <?= ( $theme == 'light' ) ? 'selected="selected"' : ''; ?>><?php echo esc_html_x( 'Light', 'theme name', 'wp-liveracers' ); ?></option>
+				<option value="dark" <?= ( $theme == 'dark' ) ? 'selected="selected"' : ''; ?>><?php echo esc_html_x( 'Dark', 'theme name', 'wp-liveracers' ); ?></option>
 			</select>
 		</p>
 		<p>
 			<label for="<?= $this->get_field_id( 'orientation' ); ?>"><?php esc_html_e( 'Orientation', 'wp-liveracers' ); ?></label>
 			<select class="widefat" id="<?= $this->get_field_id( 'orientation' ); ?>" name="<?= $this->get_field_name( 'orientation' ); ?>">
-				<option value="vertical" <?= ( $orientation == 'vertical' ) ? 'selected="selected"' : ''; ?>><?php esc_html_x( 'Vertical', 'orientation', 'wp-liveracers' ); ?></option>
-				<option value="horizontal" <?= ( $orientation == 'horizontal' ) ? 'selected="selected"' : ''; ?>><?php esc_html_x( 'Horizontal', 'orientation', 'wp-liveracers' ); ?></option>
+				<option value="vertical" <?= ( $orientation == 'vertical' ) ? 'selected="selected"' : ''; ?>><?php echo esc_html_x( 'Vertical', 'orientation', 'wp-liveracers' ); ?></option>
+				<option value="horizontal" <?= ( $orientation == 'horizontal' ) ? 'selected="selected"' : ''; ?>><?php echo esc_html_x( 'Horizontal', 'orientation', 'wp-liveracers' ); ?></option>
 			</select>
 		</p>
 		<p>
