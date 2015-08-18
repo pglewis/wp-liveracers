@@ -3,13 +3,13 @@
 Plugin Name: WordPress LiveRacers
 Plugin URI: https://github.com/pglewis/wp-liveracers
 Description: Support for the LiveRacers "Live Widget" in WordPress
-Version: 1.0
+Version: 1.0.1
 Author: Phil Lewis
 License: GPLv2 or later
 Text Domain: wp-liveracers
 Domain Path: /languages/
 
-Copyright 2014 Phil Lewis
+Copyright 2014-2015 Phil Lewis
 
 This file is part of WordPress LiveRacers
 
