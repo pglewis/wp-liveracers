@@ -2,12 +2,12 @@
 Contributors: pglewis
 Tags: LiveRacers, simracing
 Requires at least: 3.4
-Tested up to: 3.9.1
-Stable tag: 1.0
+Tested up to: 4.2.4
+Stable tag: 1.0.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Support for the LiveRacers "Live Widget" as a WordPress plugin.  Insert the LiveRacers Live Widget on your site via a WordPress widget or shortcode.
+Insert the LiveRacers Live Widget on your site via a WordPress widget or shortcode.
 
 == Description ==
 
@@ -21,12 +21,13 @@ You can also use the shortcode `lr_livewidget` to insert the Live Widget into an
 
 Example: `[lr_livewidget url="http://efnetsimracing.liveracers.com" theme="dark"]`
 
-Supported attributes:
-* `url`: Required, the full URL to your LiveRacers domain
-* `theme`: String, `light` (default) and `dark`
-* `orientation`: String, `vertical` (default) and `horizontal`
-* `width`: Numeric, width of the widget in pixels (default = 200)
-* `canjoin`: String, `true` (default) or `false`; whether or not to show the "Join" link
+= Shortcode attributes =
+
+* `url` -  String, required: the full URL to your LiveRacers domain
+* `theme` - String: `"light"` (default) or `"dark"`
+* `orientation` - String: `"vertical"` (default) or `"horizontal"`
+* `width` - Numeric: width of the widget in pixels (default = 200)
+* `canjoin` - String: `"true"` (default) or `"false"`; whether or not to show the "Join" link
 
 == Installation ==
 
@@ -42,6 +43,9 @@ OR you can just install it from the WordPress admin by going to Plugins >> Add N
 1. The WordPress Widget UI for the LiveRacers Live Widget
 
 == Changelog ==
+
+= 1.0.1 =
+* Fix missing output for theme and orientation drop-downs in the widget
 
 = 1.0 =
 * Initial release
